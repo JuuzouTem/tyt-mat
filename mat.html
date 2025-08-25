@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYT 2026 Matematik Parçalama Programı</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            color: #bdc3c7;
+        }
+
+        .program-section {
+            margin-bottom: 50px;
+        }
+
+        .program-section h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #34495e;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .day-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .day-card h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #ffffff;
+            background-color: #3498db;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: -25px -25px 20px -25px;
+            text-align: center;
+        }
+
+        .day-card ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .day-card li {
+            padding: 10px 0 10px 30px;
+            border-bottom: 1px solid #ecf0f1;
+            position: relative;
+        }
+
+        .day-card li:last-child {
+            border-bottom: none;
+        }
+
+        .day-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .final-card {
+            background: linear-gradient(135deg, #2980b9, #2c3e50);
+            color: #ffffff;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            grid-column: 1 / -1; /* Genişleyerek tüm sütunları kaplar */
+        }
+        .final-card h3 {
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+        .final-card p {
+            font-size: 1.1em;
+        }
+        .final-card .code {
+            display: inline-block;
+            background-color: #f1c40f;
+            color: #2c3e50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>TYT 2026 MATEMATİK</h1>
+            <p>21 GÜNDE İLK 12 KONU & PROBLEMLER PARÇALAMA PROGRAMI</p>
+        </header>
+
+        <section class="program-section">
+            <h2>İLK 12 KONU PROGRAMI</h2>
+            <div class="schedule-grid">
+                <!-- 1. GÜN -->
+                <div class="day-card">
+                    <h3>1. GÜN</h3>
+                    <ul>
+                        <li>Soner Akıncı 2026 TYT MATEMATİK KAMPI | Temel Kavramlar - 1. ve 2. Ders videolarını izle (Toplam 4 Video).</li>
+                        <li>İzlediğin konularla ilgili kısımları Mikro Orijinal TYT Matematik SB'den çöz.</li>
+                    </ul>
+                </div>
+                <!-- 2. GÜN -->
+                <div class="day-card">
+                    <h3>2. GÜN</h3>
+                    <ul>
+                        <li>Soner Akıncı 2026 TYT MATEMATİK KAMPI | Temel Kavramlar - 3. Ders videosunu izle (Toplam 2 Video).</li>
+                        <li>İzlediğin konuyla ilgili kısmı Mikro Orijinal TYT Matematik SB'den bitir.</li>
+                        <li>Orijinal TYT Matematik SB'den "Temel Kavramlar" ile ilgili olan ilk 6 testi çöz.</li>
+                    </ul>
+                </div>
+                <!-- 3. GÜN -->
+                <div class="day-card">
+                    <h3>3. GÜN</h3>
+                    <ul>
+                        <li>Orijinal TYT Matematik SB'den "Temel Kavramlar" ile ilgili son 2 testi ve "Tek ve Çift Sayılar" ile ilgili olan 3 testi çöz.</li>
+                        <li>Bıyıklı Matematik 2026 TYT MATEMATİK KAMPI | Ardışık Sayılar videolarını izle (Toplam 2 video).</li>
+                        <li>Orijinal TYT Matematik SB'den "Ardışık Sayılar" ile ilgili olan tüm testleri çöz.</li>
+                    </ul>
+                </div>
+                <!-- Diğer günler buraya eklenecek... -->
+                <div class="day-card"><h3>4. GÜN</h3><ul><li>Soner Akıncı 2026 TYT MATEMATİK KAMPI | Sayı Basamakları - 4. Ders videosunu izle (Toplam 3 Video).</li><li>İzlediğin konuyla ilgili kısmı Mikro Orijinal TYT Matematik SB'den bitir.</li><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Sayı Basamakları Bölüm Bitirme ve Efişinado Testi videosunu izle (Toplam 3 Video).</li><li>Orijinal TYT Matematik SB'den "Basamak Kavramı" ile ilgili olan 3 testi çöz.</li></ul></div>
+                <div class="day-card"><h3>5. GÜN</h3><ul><li>Soner Akıncı 2026 TYT MATEMATİK KAMPI | Faktöriyel - 5. Ders videosunu izle (Toplam 2 Video).</li><li>Asal Sayılar - 6 ve 7. Ders videolarını izle (Toplam 4 Video).</li><li>İzlediğin konularla ilgili kısmı Mikro Orijinal TYT Matematik SB'den bitir.</li></ul></div>
+                <div class="day-card"><h3>6. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Temel Kavramlar Bölüm Bitirme ve Efişinado Testi videosunu izle (Toplam 4 Video).</li><li>Orijinal TYT Matematik SB'den "Faktöriyel ve Aralarında Asal Sayılar" ile ilgili olan testleri çöz.</li><li>Daha önceki günlerde Mikro Orijinal'den "Temel Kavramlar" ile ilgili yanlış yaptığın veya çözmediğin sorular varsa yeniden çöz.</li><li>Orijinal TYT Matematik SB'den daha önceki günlerde yanlış yaptığın veya çözmediğin sorular varsa yeniden çöz.</li></ul></div>
+                <div class="day-card"><h3>7. GÜN</h3><ul><li>Soner Akıncı 2026 TYT MATEMATİK KAMPI | Bölme ve Bölünebilme - 8. Ders videosunu izle (Toplam 2 Video).</li><li>İzlediğin konularla ilgili kısmı Mikro Orijinal TYT Matematik SB'den bitir.</li><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Bölme ve Bölünebilme Bölüm Bitirme ve Efişinado Testi videosunu izle (Toplam 3 Video).</li><li>Orijinal TYT Matematik SB'den "Bölme ve Bölünebilme" ile ilgili ilk 4 testi çöz.</li></ul></div>
+                <div class="day-card"><h3>8. GÜN</h3><ul><li>Orijinal TYT Matematik SB'den "Bölme ve Bölünebilme" ile ilgili son 2 testi çöz.</li><li>Soner Akıncı 2026 TYT MATEMATİK KAMPI | EBOB & EKOK - 8. Ders videosunu izle (Toplam 2 Video).</li><li>İzlediğin konularla ilgili kısmı Mikro Orijinal TYT Matematik SB'den bitir.</li></ul></div>
+                <div class="day-card"><h3>9. GÜN</h3><ul><li>Bıyıklı Matematik 2026 TYT MATEMATİK KAMPI | EBOB & EKOK konu anlatım ve soru çözüm videolarını izle (Toplam 4 Video).</li><li>Orijinal TYT Matematik SB'den EBOB EKOK ile ilgili tüm tesleri çöz.</li></ul></div>
+                <div class="day-card"><h3>10. GÜN</h3><ul><li>Soner Akıncı 2026 TYT MATEMATİK KAMPI | Rasyonel Sayılar - 13. Ders videosunu izle (Toplam 2 Video).</li><li>Ondalık Sayılar - 14. Ders videosunu izle (Toplam 2 Video).</li><li>İzlediğin konularla ilgili kısmı Mikro Orijinal TYT Matematik SB'den bitir.</li></ul></div>
+                <div class="day-card"><h3>11. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Rasyonel Sayılar Bölüm Bitirme ve Efişinado soru çözüm videosunu izle.</li><li>Orijinal TYT Matematik SB'den Rasyonel Sayılar ile ilgili tüm testleri çöz.</li><li>"Rasyonel Sayılar" kısmına kadar Orijinal'de ve Mikro Orijinal'de yapmadığın veya yanlış yaptığın sorular varsa yeniden çöz.</li></ul></div>
+                <div class="day-card"><h3>12. GÜN</h3><ul><li>Soner Akıncı 2026 TYT MATEMATİK KAMPI | I. Dereceden Denklemler - 15. Ders videosunu izle (Toplam 2 Video).</li><li>Basit Eşitsizlikler - 16. Ders videosunu izle (Toplam 3 Video).</li><li>İzlediğin konularla ilgili kısmı Mikro Orijinal TYT Matematik SB'den bitir.</li></ul></div>
+                <div class="day-card"><h3>13. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | I ve II Bilinmeyenli Denklemler - Bölüm Bitirme ve Efişinado Testini izle (Toplam 2 Video).</li><li>Basit Eşitsizlikler Bölüm Bitirme ve Efişinado Testlerini izle (Toplam 2 Video).</li><li>Orijinal TYT Matematik SB'den "Birinci Dereceden Denklem ve Eşitsizlikler" ilk 4 testi çöz.</li><li>Orijinal TYT Matematik SB'den "Basit Eşitsizlikler" ilk 4 testi çöz.</li></ul></div>
+                <div class="day-card"><h3>14. GÜN</h3><ul><li>Soner Akıncı 2026 TYT MATEMATİK KAMPI | Mutlak Değer - 18 ve 19. Ders videosunu izle (Toplam 4 Video).</li><li>İzlediğin konularla ilgili kısmı Mikro Orijinal TYT Matematik SB'den bitir.</li><li>Orijinal TYT Matematik SB'den "Mutlak Değer" ilk 3 testi çöz.</li></ul></div>
+                <div class="day-card"><h3>15. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Mutlak Değer Bölüm Bitirme ve Efişinado Testlerini izle, tabiki önce kendin çözmeye çalış.</li><li>Orijinal TYT Matematik SB'den "Mutlak Değer" son 4 testi çöz.</li></ul></div>
+                <div class="day-card"><h3>16. GÜN</h3><ul><li>Soner Akıncı 2026 TYT MATEMATİK KAMPI | Üslü Sayılar - 20. Ders videosunu izle (Toplam 3 Video).</li><li>İzlediğin konularla ilgili kısmı Mikro Orijinal TYT Matematik SB'den bitir.</li><li>Orijinal TYT Matematik SB'den "Üslü Sayılar" ilk 4 testi çöz.</li></ul></div>
+                <div class="day-card"><h3>17. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Üslü Sayılar Bölüm Bitirme ve Efişinado Testlerini izle, tabiki önce kendin çözmeye çalış.</li><li>Orijinal TYT Matematik SB'den "Üslü Sayılar" son 4 testi çöz.</li><li>"Üslü Sayılar"a kadar diğer konularda yapmadığın sorular veya yanlış yaptığın soruları da yeniden çöz.</li></ul></div>
+                <div class="day-card"><h3>18. GÜN</h3><ul><li>Soner Akıncı 2026 TYT MATEMATİK KAMPI | Köklü Sayılar - 21. Ders videosunu izle (Toplam 3 Video).</li><li>İzlediğin konularla ilgili kısmı Mikro Orijinal TYT Matematik SB'den bitir.</li><li>Orijinal TYT Matematik SB'den "Köklü Sayılar" ilk 5 testi çöz.</li></ul></div>
+                <div class="day-card"><h3>19. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Köklü Sayılar Bölüm Bitirme ve Efişinado Testlerini izle.</li><li>Orijinal TYT Matematik SB'den "Köklü Sayılar" son 4 testi çöz.</li></ul></div>
+                <div class="day-card"><h3>20. GÜN</h3><ul><li>Soner Akıncı 2026 TYT MATEMATİK KAMPI | Çarpanlara Ayırma - 22 ve 23. Ders videosunu izle (Toplam 6 Video).</li><li>İzlediğin konularla ilgili kısmı Mikro Orijinal TYT Matematik SB'den bitir.</li><li>Orijinal TYT Matematik SB'den "Çarpanlara Ayırma" ilk 3 test çöz.</li></ul></div>
+                <div class="day-card"><h3>21. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Çarpanlara Ayırma Bölüm Bitirme ve Efişinado Testlerini izle, tabiki önce kendin çözmeye çalış.</li><li>Orijinal TYT Matematik SB'den "Çarpanlara Ayırma" son 3 testi çöz.</li><li>Mikro Orijinal'de "Çarpanlara Ayırma" kısmına kadar olan diğer konularda yapmadığın sorular varsa tamamla.</li><li>Ve, ilk 12 konuyu an itibariyle parçaladık! Hepinizi tebrik ediyorum. Sırada problemler var ;)</li></ul></div>
+            </div>
+        </section>
+
+        <section class="program-section">
+            <h2>PROBLEMLER PROGRAMI</h2>
+            <div class="schedule-grid">
+                <!-- 1. GÜN - Problemler -->
+                <div class="day-card"><h3>1. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Oran-Orantı Bölüm Bitirme ve Efişinado Testlerini izle, tabiki önce kendin çözmeye çalış.</li><li>Bilgi Sarmal Problemler'den "Orantı Problemleri" Oryantasyon Testleri (3 Test) kısmını çöz.</li><li>Eğer sorularda zorlanıyorsan Bıyıklı Matematik'in 55 Günde TYT Matematik Kampı'ndan "Oran-Orantı Bıyıklı Sorular" soru çözüm videosunu izle.</li></ul></div>
+                <!-- 2. GÜN - Problemler -->
+                <div class="day-card"><h3>2. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Sayı-Kesir Problemleri Bölüm Bitirme ve Efişinado Testlerini izle, tabiki önce kendin çözmeye çalış.</li><li>Bilgi Sarmal Problemler'den "Sayı Problemleri" Oryantasyon Testleri (6 Test) kısmını çöz.</li><li>Eğer sorularda zorlanıyorsan Mert Hoca'nın TYT Matematik Kampı'ndan "Sayı ve Kesir Problemleri" konu anlatım videolarını (6 video) izleyip soruları tekrar çözmeye çalış.</li></ul></div>
+                <!-- 3. GÜN - Problemler -->
+                <div class="day-card"><h3>3. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Yaş Problemleri Bölüm Bitirme ve Efişinado Testlerini izle, tabiki önce kendin çözmeye çalış.</li><li>Bilgi Sarmal Problemler'den "Yaş Problemleri" Oryantasyon Testleri (2 Test) kısmını çöz.</li><li>Eğer sorularda zorlanıyorsan Mert Hoca'nın TYT Matematik Kampı'ndan "Yaş Problemleri" konu anlatım videolarını (2 video) izleyip soruları tekrar çözmeye çalış.</li></ul></div>
+                <!-- 4. GÜN - Problemler -->
+                <div class="day-card"><h3>4. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Yüzde Kar Zarar Problemleri Bölüm Bitirme ve Efişinado Testlerini izle, tabiki önce kendin çözmeye çalış.</li><li>Bilgi Sarmal Problemler'den "Yüzde Kar Zarar Problemleri" Oryantasyon Testleri (5 Test) kısmını çöz.</li><li>Eğer sorularda zorlanıyorsan Mert Hoca'nın TYT Matematik Kampı'ndan "Yüzde Kar Zarar Problemleri" konu anlatım videolarını (4 video) izleyip soruları tekrar çözmeye çalış.</li></ul></div>
+                <!-- 5. GÜN - Problemler -->
+                <div class="day-card"><h3>5. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Karışım Problemleri Bölüm Bitirme ve Efişinado Testlerini izle, tabiki önce kendin çözmeye çalış.</li><li>Bilgi Sarmal Problemler'den "Karışım Problemleri" Oryantasyon Testleri (2 Test) kısmını çöz.</li><li>Eğer sorularda zorlanıyorsan Mert Hoca'nın TYT Matematik Kampı'ndan "Karışım Problemleri" konu anlatım videolarını (2 video) izleyip soruları tekrar çözmeye çalış.</li></ul></div>
+                <!-- 6. GÜN - Problemler -->
+                <div class="day-card"><h3>6. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Hareket Problemleri Bölüm Bitirme ve Efişinado Testlerini izle, tabiki önce kendin çözmeye çalış.</li><li>Bilgi Sarmal Problemler'den "Hareket Problemleri" Oryantasyon Testleri (4 Test) kısmını çöz.</li><li>Eğer sorularda zorlanıyorsan Mert Hoca'nın TYT Matematik Kampı'ndan "Hareket Problemleri" konu anlatım videolarını (2 video) izleyip soruları tekrar çözmeye çalış.</li></ul></div>
+                <!-- 7. GÜN - Problemler -->
+                <div class="day-card"><h3>7. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | İşçi Problemleri Bölüm Bitirme ve Efişinado Testlerini izle, tabiki önce kendin çözmeye çalış.</li><li>Bilgi Sarmal Problemler'den "İşçi Problemleri" Oryantasyon Testleri (2 Test) kısmını çöz.</li><li>Eğer sorularda zorlanıyorsan Mert Hoca'nın TYT Matematik Kampı'ndan "İşçi Problemleri" konu anlatım videolarını (2 video) izleyip soruları tekrar çözmeye çalış.</li></ul></div>
+                <!-- 8. GÜN - Problemler -->
+                <div class="day-card"><h3>8. GÜN</h3><ul><li>Mert Hoca 2026 TYT MATEMATİK KAMPI | Grafik Problemleri Bölüm Bitirme ve Efişinado Testlerini izle, tabiki önce kendin çözmeye çalış.</li><li>Bilgi Sarmal Problemler'den "Grafik Problemleri" Oryantasyon Testleri (3 Test) kısmını çöz.</li><li>Eğer sorularda zorlanıyorsan Mert Hoca'nın TYT Matematik Kampı'ndan "Grafik Problemleri" konu anlatım videolarını (2 video) izleyip soruları tekrar çözmeye çalış.</li></ul></div>
+                <!-- 9. GÜN - Problemler -->
+                <div class="day-card"><h3>9. GÜN</h3><ul><li>Mert Hoca'nın "Problemler" videolarını ve Bilgi Sarmal'daki "Oryantasyon Testleri" kısmını bitirdik!</li><li>Şimdi ise yine Bilgi Sarmal Problemler'den günde 3 "Simülasyon Testi" çözerek günlük problem çözme işini rutine bağlayacağız!</li></ul></div>
+
+                <!-- Final Card -->
+                <div class="final-card">
+                    <h3>İndirim Kodu ve Sonraki Adımlar</h3>
+                    <p>kitapisler.com üzerinden yapacağınız alışverişlerde aşağıdaki indirim kodunu kullanabilirsiniz.</p>
+                    <div class="code">sencer5</div>
+                    <p style="margin-top: 20px;">Problemleri de bitirdikten sonra, düzenli deneme çözümleri ve branş denemeleri ile kendinizi geliştirmeye devam edin. Başarılar!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
